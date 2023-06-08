@@ -19,8 +19,8 @@ use App\Http\Controllers\AdministradorController;
 
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 
-Route::get('/alumno',[AlumnosController::class,'alumno'])->name('alumno.index');
+Route::get('/alumno',[AlumnosController::class,'index'])->name('alumno.index');
 
-Route::get('/profesor',[ProfesoresController::class,'profesor'])->name('profesor.index');
+Route::get('/profesor',[ProfesoresController::class,'index'])->name('profesor.index');
 
-Route::get('/administrador',[AdministradorController::class,'administrador'])->name('administrador.index');
+Route::get('/administrador',[AdministradorController::class,'index'])->name('administrador.index');
