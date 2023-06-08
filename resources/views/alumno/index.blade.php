@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Vista de alumno</h1>
 </body>
 </html>

@@ -47,10 +47,10 @@
                             <a class="nav-link" href="{{route('alumno.index')}}">Alumno</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Estadios</a>
+                            <a class="nav-link" href="{{route('profesor.index')}}">Profesores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Estadísticas</a>
+                            <a class="nav-link" href="{{route('administdrador.index')}}">Administrador</a>
                         </li>
                         <li class="nav-item">
                             {{-- <a class="nav-link @if(Route::current()->getName()=='jugadores.index') active @endif" href="{{route('jugadores.index')}}">Jugadores</a> --}}
