@@ -20,8 +20,14 @@ use App\Http\Controllers\AdministradorController;
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 
 Route::get('/alumno',[AlumnosController::class,'index'])->name('alumno.index');
+Route::post('/alumno',[AlumnosController::class,'store'])->name('alumnos.store');
+
 
 Route::get('/profesor',[ProfesoresController::class,'index'])->name('profesor.index');
+Route::get('/profesor/{propuesta}',[ProfesoresController::class,'show'])->name('propuesta.show');
+Route::post('/profesor',[ProfesoresController::class,'store'])->name('profesor_propuesta.store');
 
 Route::get('/administrador',[AdministradorController::class,'index'])->name('administrador.index');
-Route::get('/administrador/{estudiante}/editestudiante',[AdministradorController::class,'edit'])->name('administrador.editestudiante');
+Route::get('/administrador/{estudiante}/editestudiante',[AdministradorController::class,'editestudiante'])->name('administrador.editestudiante');
+Route::get('/administrador/{profesor}/editprofesor',[AdministradorController::class,'editprofe'])->name('administrador.editprofesor');
+
