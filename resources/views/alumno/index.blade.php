@@ -21,7 +21,7 @@
             <div class="col">
                 <div class="input-group">
                     <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                    <button class="btn btn-primary" type="button" id="inputGroupFileAddon04">Subir</button>
+                    <button class="btn btn-warning" type="button" id="inputGroupFileAddon04">Subir</button>
                 </div>
             </div>
         </div>

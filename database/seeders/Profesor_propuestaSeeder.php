@@ -14,7 +14,7 @@ class Profesor_propuestaSeeder extends Seeder
      * 
      * @return void
      */
-    public function run(): void
+    public function run()
     {
         //
     }

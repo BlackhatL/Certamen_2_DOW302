@@ -14,8 +14,11 @@ class ProfesoresSeeder extends Seeder
      * 
      * @return void
      */
-    public function run(): void
+    public function run()
     {
-        //
+        DB::table('profesores')->insert([
+            ['rut'=>'12345654-6','nombre'=>'Hernan','apellido'=>'Saavedra','created_at'=>Carbon::now()],
+            ['rut'=>'09155654-6','nombre'=>'Dagoberto','apellido'=>'Cabrera','created_at'=>Carbon::now()]
+        ]);
     }
 }

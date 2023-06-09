@@ -15,7 +15,7 @@
     <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-outline-success">Aprobar</button>
         <button type="button" class="btn btn-outline-danger">Rechazar</button>
-        <button type="button" class="btn btn-outline-dark">Modificar</button>
+        <button type="button" class="btn btn-warning">Modificar</button>
     </div>
     <form>
         <div class="col-6 mb-3">

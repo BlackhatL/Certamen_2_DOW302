@@ -16,9 +16,6 @@ class PropuestasSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('estudi')->insert([
-            ['rut'=>'20224312-6','nombre'=>'Lautaro','apellido'=>'Piderit','email'=>'lpiderit@gmail.com','created_at'=>Carbon::now()],
-            ['rut'=>'20484779-7','nombre'=>'Nelson','apellido'=>'Amigo','email'=>'amigocordovanelson@gmail.com','created_at'=>Carbon::now()]
-        ]);
+
     }
 }

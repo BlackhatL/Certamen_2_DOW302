@@ -11,13 +11,20 @@ class AdministradorController extends Controller
     public function index(){
         $estudiantes = estudiantes::all();
         $profesores = profesor::all();
-        return view('administrador.index',compact('estudiantes'));
+        return view('administrador.index',compact('estudiantes','profesores'));
     }
     public function show(estudiantes $estudiantes){
         return view('alumno.show',compact('estudiantes'));
     }
-    public function edit(estudiantes $estudiantes){
+    public function editestudiante(estudiantes $estudiantes){
         $estudiantes = estudiantes::all();
         return view('administrador.editestudiante',compact('estudiantes'));
     }
+    
+    public function editprofe(profesor $profesores){
+        $profesores = profesor::all();
+        return view('administrador.editprofesor',compact('profesores'));
+    }
+
+
 }
