@@ -1,70 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap-custom.min.css">
-    <title>Alumnos_Vista</title>
-</head>
 
-<body>
-<div>
-    <div>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">ESTUDIANTES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PROFESORES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ADMIN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('home.index')}}">HOME</a>
-            </li>
-          </ul>
-    </div>
-</div>
-    <div class="container bg-section">
+@extends('layouts.master')
+
+@section('contenido-principal')
+
+    <div class="container bg-light">
         <div class="row">
-            <div class="col-12">
-                <div class="banner" style=>
-                    <img src="./images/fondo-carreras-2048x1239.jpg"class="img-fluid" alt="Responsive image">
-                </div>
+            <div class="col-12 text-center">
                 <h3>Bienvenido a la vista Alumnos</h3>
-                <div class="col text-center">
-                    <h2>Alumnos</h2>
-                      
-                </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-9 d-flex flex-column justify-content-center align-items-center">
-                <table style="background-color:rgb(70, 160, 234) ">
-                   
-                    <tr>
-                        <th>RUT</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <td>00.000.000-k</td>
-                        <td>Goku</td>
-                        <td>Jara</td>
-                        <td>La_tierra@usm.cl</td>
-                    </tr>
-                </table>
-                <hr>
-            </div>
-        </div>
-    </div>
-    <div class="container text-bg-info">
+    <div class="container bg-success">
         <div class="row">
             <div class="col">
                 <h4>Ingrese su propuesta</h4>
@@ -111,11 +57,5 @@
     </div>
     <hr>
     <hr>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
-</body>
-</html>
+
+@endsection
