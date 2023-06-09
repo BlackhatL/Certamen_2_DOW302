@@ -9,6 +9,24 @@
 </head>
 
 <body>
+<div>
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ESTUDIANTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROFESORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ADMIN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('home.index')}}">HOME</a>
+            </li>
+          </ul>
+    </div>
+</div>
     <div class="container bg-section">
         <div class="row">
             <div class="col-12">
