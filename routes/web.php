@@ -24,3 +24,4 @@ Route::get('/alumno',[AlumnosController::class,'index'])->name('alumno.index');
 Route::get('/profesor',[ProfesoresController::class,'index'])->name('profesor.index');
 
 Route::get('/administrador',[AdministradorController::class,'index'])->name('administrador.index');
+Route::get('/administrador/{estudiante}/editestudiante',[AdministradorController::class,'edit'])->name('administrador.editestudiante');

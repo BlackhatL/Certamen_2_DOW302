@@ -35,7 +35,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Profesor</h4>
                             <p class="card-text">Vista del Profesor, donde se puede revisar y comentar los archivos PDF de los alumnos</p>
-                            <a href="Alumno.html" class="btn btn-secondary">Ingresar</a>
+                            <a href="{{route('profesor.index')}}" class="btn btn-secondary">Ingresar</a>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Administrador</h4>
                             <p class="card-text">Vista del Administrador, donde se puede gestionar profesores, estudiantes y el estado de las propuestas</p>
-                            <a href="Administrador.html" class="btn btn-secondary">Ingresar</a>
+                            <a href="{{route('administrador.index')}}" class="btn btn-secondary">Ingresar</a>
                         </div>
                     </div>
 
