@@ -10,88 +10,65 @@
     <title>Equipos</title>
 </head>
 
-<body>
-    
-    <!-- barra usuario -->
-    <div class="container-fluid">
-        <div class="row bg-dark text-white">
-            <div class="col-8">
-                Bienvenido <span class="fw-bold">User1</span>
-            </div>
-            <div class="col-3 text-end d-none d-lg-block">
-                Último inicio de sesión 01/04/2023 a las 18:34
-            </div>
-            <div class="col-1 text-end d-none d-lg-block">
-                <a href="#" class="text-white">Cerrar Sesión</a>
-            </div>
-        </div>
-    </div>
+<body class="bg-dark">
+    <h1 class="container text-center text-white">Página Principal</h1>
+    <div class="container text-center">
+        <div class="row h-100">
+            <!--CARD ALUMNO-->
+            <!--CON ESTA PURA LINEA PUDE CENTRAR ESTA PORQUERIA-->
+            <div class="card-group position-absolute top-50 end-0 translate-middle-y">
+                <div class="col-sm-4 mb-3 mb-sm-0">
 
-    <!-- navbar -->
-    <div class="container-fluid px-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">DOW302</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('alumno.index')}}">Alumno</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('profesor.index')}}">Profesores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('administrador.index')}}">Administrador</a>
-                        </li>
-                        <li class="nav-item">
-                            {{-- <a class="nav-link @if(Route::current()->getName()=='jugadores.index') active @endif" href="{{route('jugadores.index')}}">Jugadores</a> --}}
-                            <a class="nav-link" href="#">Jugadores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Partidos</a>
-                        </li>
+                    <div class="card text-bg-success h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Alumno</h4>
+                            <p class="card-text">Vista del Alunmo, donde se puede subir y eliminar archivos PDF</p>
+                            <a href="Alumno.html" class="btn btn-secondary">Ingresar</a>
+                        </div>
+                    </div>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Configuración
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark bg-primary">
-                                <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
-                                <li><a class="dropdown-item" href="#">Usuarios</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://www.usm.cl">UTFSM</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="#">Cerrar Sesión</a>
-                        </li>
+                </div>
+                <!--CARD PROFESOR-->
+                <div class="col-sm-4 mb-3 mb-sm-0">
 
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
+                    <div class="card text-bg-primary h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Profesor</h4>
+                            <p class="card-text">Vista del Profesor, donde se puede revisar y comentar los archivos PDF de los alumnos</p>
+                            <a href="Alumno.html" class="btn btn-secondary">Ingresar</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--CARD ADMINISTRADOR-->
+                <div class="col-sm-4 mb-3 mb-sm-0">
+
+                    <div class="card text-bg-warning">
+                        <div class="card-body">
+                            <h4 class="card-title">Administrador</h4>
+                            <p class="card-text">Vista del Administrador, donde se puede gestionar profesores, estudiantes y el estado de las propuestas</p>
+                            <a href="Administrador.html" class="btn btn-secondary">Ingresar</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </nav>
+
+
+        </div>
+
     </div>
 
-    <!-- datos -->
+
+
+
+
+
 
     @yield('contenido-principal')
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
