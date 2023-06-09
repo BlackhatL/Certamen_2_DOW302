@@ -10,12 +10,12 @@
     <title>Equipos</title>
 </head>
 
-<body class="bg-dark">
-    <h1 class="container text-center text-white">Página Principal</h1>
+<body class="bg-light">
+    <h1 class="border container-fluid text-center text-white">Página Principal</h1>
     <div class="container text-center">
         <div class="row h-100">
             <!--CARD ALUMNO-->
-            <!--CON ESTA PURA LINEA PUDE CENTRAR ESTA PORQUERIA-->
+            <!--CON ESTA PURA LINEA SE CENTRA EL CONTENIDO-->
             <div class="card-group position-absolute top-50 end-0 translate-middle-y">
                 <div class="col-sm-4 mb-3 mb-sm-0">
 
@@ -23,7 +23,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Alumno</h4>
                             <p class="card-text">Vista del Alunmo, donde se puede subir y eliminar archivos PDF</p>
-                            <a href="Alumno.html" class="btn btn-secondary">Ingresar</a>
+                            <a href="{{route('alumno.index')}}" class="btn btn-secondary">Ingresar</a>
                         </div>
                     </div>
 
