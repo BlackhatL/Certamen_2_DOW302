@@ -19,7 +19,7 @@
             <div class="card-group position-absolute top-50 end-0 translate-middle-y">
                 <div class="col-sm-4 mb-3 mb-sm-0">
 
-                    <div class="card text-bg-success h-100">
+                    <div class="card text-bg-primary h-100">
                         <div class="card-body">
                             <h4 class="card-title">Alumno</h4>
                             <p class="card-text">Vista del Alunmo, donde se puede subir y eliminar archivos PDF</p>
