@@ -4,9 +4,9 @@
 
 
 
-    <h1 class="container-fluid text-center text-white">Página Principal</h1>
-    <div class="container text-center">
-        <div class="row h-100">
+    <h1 class="text-center text-white">Página Principal</h1>
+    <div class="container container-fluid text-center">
+        <div class="row">
             <!--CARD ALUMNO-->
             <!--CON ESTA PURA LINEA SE CENTRA EL CONTENIDO-->
             <div class="card-group position-absolute top-50 end-0 translate-middle-y">
@@ -15,7 +15,7 @@
                     <div class="card text-bg-success h-100">
                         <div class="card-body">
                             <h4 class="card-title">Alumno</h4>
-                            <p class="card-text">Vista del Alunmo, donde se puede subir y eliminar archivos PDF</p>
+                            <p class="card-text">Vista del Alunmo, donde se puede subir archivos PDF</p>
                             <a href="{{route('alumno.index')}}" class="btn btn-light">Ingresar</a>
                         </div>
                     </div>

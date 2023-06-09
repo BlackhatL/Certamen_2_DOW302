@@ -3,59 +3,69 @@
 
 @section('contenido-principal')
 
-    <div class="container bg-light">
+    <div class="container bg-success">
         <div class="row">
             <div class="col-12 text-center">
                 <h3>Bienvenido a la vista Alumnos</h3>
             </div>
         </div>
-    </div>
-    <div class="container bg-success">
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
                 <h4>Ingrese su propuesta</h4>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col">
-                <div class="input-group">
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                    <button class="btn btn-warning" type="button" id="inputGroupFileAddon04">Subir</button>
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Subir propuesta</div>
+                    <div class="card-body">
+                        <form method="POST" action={{route('alumnos.store')}} enctype="multipart/form-data">
+                            @csrf
+                            <div class="mb-3">
+                                <label for="estudiante_rut" class="form-label">Rut del estudiante</label>
+                                <input type="text" id="estudiante_rut" name="estudiante_rut" class="form-control">
+                            </div>
+                            <div class="input-group">
+                                <input type="file" name="documento" class="form-control" id="documento" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <button class="btn btn-warning" type="sumbit" id="documento">Subir</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action active" style="background-color: yellowgreen;">En Revisión</button>
-                    <button type="button" class="list-group-item list-group-item-action">Modificar</button>
-                    <button type="button" class="list-group-item list-group-item-action">Aprobado</button>
-                    <button type="button" class="list-group-item list-group-item-action">RECHAZADO UWU</button>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Retroalimentación de Profesores</div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped table-hover bg-success">
+                            <tr>
+                                <th class="align-middle text-nowrap">Id</th>
+                                <th class="align-middle text-nowrap">Rut Del Profesor</th>
+                                <th class="align-middle text-nowrap">Fecha</th>
+                                <th class="align-middle text-nowrap">Hora</th>
+                                <th class="align-middle text-nowrap">Comentario</th>
+                            </tr>
+                            <tbody>
+                                @foreach ($profesor_propuesta as $profesor_propuesta)
+                                <tr>
+                                    <td class="align-middle text-nowrap">{{$profesor_propuesta->propuesta_id}}</td>
+                                    <td class="align-middle text-nowrap">{{$profesor_propuesta->profesor_rut}}</td>
+                                    <td class="align-middle text-nowrap">{{$profesor_propuesta->fecha}}</td>
+                                    <td class="align-middle text-nowrap">{{$profesor_propuesta->hora}}</td>
+                                    <td class="align-middle text-nowrap">{{$profesor_propuesta->comentario}}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+    
+    
+                        </table>
+                    </div>
                 </div>
+                
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <a href="https://elinf.usm.cl/wp-content/uploads/2021/01/fondo-carreras-2048x1239.jpg" target="_blank" class="btn btn-outline-primary btn-lg">YO ESTUDIO AQUÍ</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h1>INGRESE COMENTARIOS___ PROFE POR FAVOR PÓNGAME UN 100.000.000.000.000.000.000.000</h1>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">COMENTARIOS</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-dark">COMENTAR</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <hr>
 
+
+    </div>
 @endsection
