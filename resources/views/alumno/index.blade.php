@@ -30,9 +30,6 @@
     <div class="container bg-section">
         <div class="row">
             <div class="col-12">
-                <div class="banner" style=>
-                    <img src="./images/fondo-carreras-2048x1239.jpg"class="img-fluid" alt="Responsive image">
-                </div>
                 <h3>Bienvenido a la vista Alumnos</h3>
                 <div class="col text-center">
                     <h2>Alumnos</h2>
